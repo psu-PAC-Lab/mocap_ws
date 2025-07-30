@@ -15,3 +15,7 @@ services:
     depends_on:
       - mocap_optitrack_driver # note: race conditions are still possible, so check logs
     command: bash -c "sleep 5 && ros2 lifecycle set /mocap_optitrack_driver_node activate"
+  clock:
+    image: mocap_ws
+    network_mode: host
+    command: ros2 run clock_publisher clock_publisher
