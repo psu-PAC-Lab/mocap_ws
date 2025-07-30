@@ -11,7 +11,8 @@ ARG ROS2_VERSION
 # install required packages
 RUN apt-get update && apt-get install -y \
     ros-${ROS2_VERSION}-nav-msgs \
-    python3-pip
+    python3-pip \
+    python3-requests
 
 # let pip break system packages
 ENV PIP_BREAK_SYSTEM_PACKAGES=1

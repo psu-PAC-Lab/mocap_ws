@@ -1,0 +1,17 @@
+services:
+  mocap:
+    image: mocap_ws
+    network_mode: host
+    command: ros2 launch mocap mocap_launch.py
+  mocap_optitrack_driver:
+    image: mocap_ws
+    network_mode: host
+    command: ros2 launch mocap_optitrack_driver optitrack2.launch.py
+  mocap_optitrack_launcher:
+    image: mocap_ws
+    network_mode: host
+    tty: true
+    stdin_open: true
+    depends_on:
+      - mocap_optitrack_driver # note: race conditions are still possible, so check logs
+    command: bash -c "sleep 5 && ros2 lifecycle set /mocap_optitrack_driver_node activate"

@@ -1,3 +1,9 @@
 [submodule "src/mocap"]
 	path = src/mocap
 	url = https://github.com/psu-PAC-Lab/mocap.git
+[submodule "src/mocap4ros2_optitrack"]
+	path = src/mocap4ros2_optitrack
+	url = https://github.com/OptiTrack/mocap4ros2_optitrack.git
+[submodule "src/mocap_msgs"]
+	path = src/mocap_msgs
+	url = https://github.com/psu-PAC-Lab/mocap_msgs.git
