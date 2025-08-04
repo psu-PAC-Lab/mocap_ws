@@ -4,9 +4,6 @@
 [submodule "src/mocap4ros2_optitrack"]
 	path = src/mocap4ros2_optitrack
 	url = https://github.com/OptiTrack/mocap4ros2_optitrack.git
-[submodule "src/mocap_msgs"]
-	path = src/mocap_msgs
-	url = https://github.com/psu-PAC-Lab/mocap_msgs.git
 [submodule "src/clock_publisher"]
 	path = src/clock_publisher
 	url = https://github.com/psu-PAC-Lab/clock_publisher.git
