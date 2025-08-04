@@ -7,3 +7,6 @@
 [submodule "src/clock_publisher"]
 	path = src/clock_publisher
 	url = https://github.com/psu-PAC-Lab/clock_publisher.git
+[submodule "src/mocap_msgs"]
+	path = src/mocap_msgs
+	url = https://github.com/psu-PAC-Lab/mocap_msgs.git
