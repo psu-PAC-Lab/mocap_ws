@@ -27,6 +27,7 @@ COPY src /ros2_ws/src
 
 # copy mocap params
 COPY mocap_optitrack_driver_params.yaml /ros2_ws/src/mocap4ros2_optitrack/mocap_optitrack_driver/config/mocap_optitrack_driver_params.yaml
+COPY mocap_config.yaml /ros2_ws/src/mocap/config/mocap_config.yaml
 
 # docker image for all packages vs only for robot
 ARG ROBOT_BUILD
