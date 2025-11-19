@@ -44,6 +44,11 @@ RUN . /opt/ros/${ROS2_VERSION}/setup.sh && \
 # disable FAST DDS optimizations that prevent node discovery, may need to also set on host machine if using
 ENV FASTDDS_BUILTIN_TRANSPORTS=UDPv4
 
+# copy DDS configuration
+COPY dds-config-custom.xml /dds-config-custom.xml
+ENV RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+ENV FASTRTPS_DEFAULT_PROFILES_FILE=/dds-config-custom.xml
+
 # entrypoint
 COPY entrypoint.sh /ros2_ws/entrypoint.sh
 RUN chmod +x /ros2_ws/entrypoint.sh

@@ -5,8 +5,8 @@
       x: 0.4 
       y: 0.4
       z: 0.0
-    robot_names: ['0', '11', '7'] # robot streaming ID in mocap data
-    robot_namespaces: ['/rosbot', '/rosbot3', '/turtlebot'] # corresponding ROS2 namespace for each robot
+    robot_names: ['0', '11', '7', '8'] # robot streaming ID in mocap data
+    robot_namespaces: ['/rosbot', '/rosbot3', '/turtlebot', '/racetrack'] # corresponding ROS2 namespace for each robot
     filter_time_const: 0.01 # [sec]
     mocap_freq: 100.0 # [Hz]
     odom_msg_name: 'mocap' # name of the odometry message to publish
