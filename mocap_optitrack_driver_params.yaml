@@ -28,3 +28,7 @@ mocap_optitrack_driver_node:
         name: "rosbot3"
       8:
         name: "racetrack"
+      7:
+        name: "turtlebot"
+      9:
+        name: "landrover"
