@@ -32,3 +32,5 @@ mocap_optitrack_driver_node:
         name: "turtlebot"
       9:
         name: "landrover"
+      10:
+        name: "monstertruck"
